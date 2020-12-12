@@ -99,6 +99,7 @@
             <li class="nav-item"><a href="login.html">Login</a></li>
             <li class="nav-item"><a href="Registration.html">Register</a></li>
             <li class="nav-item"><a href="Contact.html">Contact</a></li>
+            <li>Mangoes</li>
         </ul>
     </nav>
 
