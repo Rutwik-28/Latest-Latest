@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    overflow-x: hidden;
+    /* Content stays within browser window */
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+.offset:before{
+    height: 3.8rem;
+    margin-top: -3.8rem;
+    content:"";
+    display: block;
+
+}
+
+.narrow {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+/* ---- Navbar ----*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: 5rem;
+}
+
+.navbar-dark .navbar-nv .nav-link {
+    color: white;
+    padding-top: 8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(7, 53, 151);
+}
+
+.card-deck {
+    margin: 30px;
+    padding: 10px;
+}
+
+
+
+/* ***********Carousel****************** */
+
+.carousel-item {
+    width: 100%;
+    height: 90vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    right: 0;
+    left: 0;
+    /* text-shadow: 1rem 1rem 0.8rem rgb(148, 144, 144); */
+    padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    text-shadow: 1rem 1rem 0.5rem;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+
+/*  Block   */
+
+.jumbotron {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: 0;
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: blue;
+    margin: 0 auto 2rem;
+}
+
+.portfolio img {
+    max-width: 100%;
+    transition: transform 5s ease;
+}
+
+.row.no-padding [class*=col-] {
+    padding: 0;
+}
+
+.portfolio img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+
+}
+
+.portfolio {
+    overflow: hidden;
+}
+
+h3 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Newsletter*/
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: #404744;
+    color: white;
+    padding: 2rem 0 3rem;
+    margin-top: 1rem;
+
+}
+
+
+footer img {
+    height: 1.9rem;
+    margin: 1.5rem 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 2.5rem;
+    margin: 1.5rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: rgb(23, 132, 165);
+}
+
+hr.socket {
+    border-top: .2rem solid rgba(8, 8, 155, 0.925);
+    width: 100%;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/* --- Bootstrap Mobile Gutter Fix -- */
+.row,
+.container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+    transition: -webkit-transform 1.2s ease;
+    transition: transform 1.2s ease;
+    transition: transform 1.2s ease, -webkit-transform 1.2s ease;
+
+}

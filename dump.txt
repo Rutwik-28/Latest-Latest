@@ -1,0 +1,35 @@
+<?php
+
+include 'temp.php';
+
+if (isset($_POST['submit'])) {
+    $name =  mysqli_real_escape_string($con,$_POST['user']);
+    $DOB = mysqli_real_escape_string( $con,$_POST['Date']);
+    $age =  mysqli_real_escape_string($con,$_POST['age']);
+    $address = mysqli_real_escape_string($con, $_POST['address']);
+    $ph_no = mysqli_real_escape_string($con, $_POST['number']);
+    $email_id = mysqli_real_escape_string($con, $_POST['email']);
+    // $skill = $_POST['skill'];
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password =  mysqli_real_escape_string($con,$_POST['password']);
+
+    $insertquery = " INSERT INTO player_info( p_id, p_name, DOB, age, address, ph_no,email_id, skill, username, password)
+     VALUES ('user','Date','age','address','number','email','username','password') ";
+    $query = mysqli_query($con, $insertquery);
+
+    if ($query) {
+?>
+        <script>
+            alert('Inserted  Successful.');
+        </script>
+    <?php
+    } else {
+    ?>
+        <script>
+            alert('! NOT Inserted Unsuccessful.');
+        </script>
+<?php
+    }
+}
+
+?>
